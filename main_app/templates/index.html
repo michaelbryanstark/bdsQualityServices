@@ -1,4 +1,52 @@
-
+{% extends "base.html" %} 
 {% block content %}
-<h1>Hello</h1>
+{% load static %}
+<style>
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        background-color: rgb(36, 39, 59);
+    }
+    
+    .head_text {
+        color: white;
+    }
+    
+    .card {
+        box-shadow: 0 16px 48px #E3E7EB;
+    }
+
+    .masthead {
+            background: #3398E1;
+            text-align:center;
+            height: auto;
+            box-shadow: 0 16px 48px #E3E7EB;
+            background: url("/static/images/header.jpg") 50% 0 no-repeat fixed;
+            
+        }
+
+  
+</style>
+
+<header class="masthead">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-8 col-md-10 mx-auto">
+                <div class="site-heading">
+                    
+                    <h1 class=" site-heading my-4 mt-3 text-white"> Welcome to BDS Quality Services </h1>
+                    <p class="text-light">Your ISO9000/AS9100 Internal Assessment Provider
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- <div class="contact">
+    <p>Contact:</p>
+    <a href="mailto:bdstark@bdsqs.net">Email</a>
+    <p>Telephone: (203)321-6024</p>
+</div> -->
 {% endblock %}

@@ -10,3 +10,27 @@ class IndexView(generic.ListView):
     def get_queryset(self):
         
         return Info.objects.order_by('updated_on')[:5]
+    
+class ContactView(generic.ListView):
+    template_name = 'contact.html'
+    context_object_name = 'latest_Info_list'
+
+    def get_queryset(self):
+        
+        return Info.objects.order_by('updated_on')[:5]
+    
+class CertificationsView(generic.ListView):
+    template_name = 'certifications.html'
+    context_object_name = 'latest_Info_list'
+
+    def get_queryset(self):
+        
+        return Info.objects.order_by('updated_on')[:5]
+    
+class ServicesView(generic.ListView):
+    template_name = 'services.html'
+    context_object_name = 'latest_Info_list'
+
+    def get_queryset(self):
+        
+        return Info.objects.order_by('updated_on')[:5]

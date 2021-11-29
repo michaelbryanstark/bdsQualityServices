@@ -34,3 +34,11 @@ class ServicesView(generic.ListView):
     def get_queryset(self):
         
         return Info.objects.order_by('updated_on')[:5]
+    
+class CompanyView(generic.ListView):
+    template_name = 'company.html'
+    context_object_name = 'latest_Info_list'
+
+    def get_queryset(self):
+        
+        return Info.objects.order_by('updated_on')[:5]

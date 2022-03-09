@@ -5,7 +5,7 @@
     body {
         font-family: "Roboto", sans-serif;
         font-size: 18px;
-        background-color: #fdfdfd;
+        background-color: rgb(53, 58, 63);
     }
     
     .head_text {
@@ -13,14 +13,30 @@
     }
     
     .card {
-        box-shadow: 0 16px 48px #E3E7EB;
+        box-shadow: none;
+        text-align: center;
+        border-width: 5px;
+        border-color: rgb(15, 34, 75);
+        border-radius: 15px;
+    }
+
+    .card-header {
+        border-width: 5px;
+        border-color: rgb(15, 34, 75);
+        border-radius: 15px;
+    }
+
+    h4 {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .masthead {
             background: #3398E1;
             text-align:center;
             height: auto;
-            box-shadow: 0 16px 48px #E3E7EB;
+            box-shadow: none;
             background: url("/static/images/header.jpg") 50% 0 no-repeat fixed;
             
         }
@@ -47,8 +63,9 @@
     <div class="row">
         <!-- Blog Entries Column -->
         <div class="col-md-8 mt-3 left">
-            <h5 class="card-header">What We Offer</h5>
-            <div class="card mb-4">
+            <div class="card text-white bg-secondary mb-2 "><h4>What We Offer</h4></div>
+            <!-- <h4 class="card-header text-white bg-secondary mb-2">What We Offer</h4> -->
+            <div class="card text-white bg-secondary mb-3">
                 <div class="card-body">
                     <p class="card-text">
                         <li>Consulting in the areas of Quality Management System gap analysis, development, and deployment.</li>  
